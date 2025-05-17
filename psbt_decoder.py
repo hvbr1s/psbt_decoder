@@ -19,6 +19,7 @@ binary_psbt = bytes.fromhex(hex_psbt)
 
 # Encode that binary data into base64
 base64_psbt = base64.b64encode(binary_psbt).decode()
+print(base64_psbt)
 
 # Decode the PSBT with bitcoin-cli
 try:
